@@ -31,8 +31,8 @@ public class CourseService {
      * @return
      */
     public List<Course> findListCourse(String inputSearch) {
-        // TODO implement here
-        return null;
+        List<Course> listCourse = courseDao.findListCourse(inputSearch);
+        return listCourse;
     }
 
     /**
