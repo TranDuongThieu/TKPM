@@ -23,8 +23,8 @@ public class BillDetailService {
      * @return
      */
     public boolean checkIsBought(String userId, String courseId) {
-        // TODO implement here
-        return false;
+        boolean boughtState = billDetailDao.checkIsBought(userId, courseId);
+        return boughtState;
     }
 
     /**
