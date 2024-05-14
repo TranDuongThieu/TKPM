@@ -34,13 +34,13 @@ public class CourseService {
     }
 
     public List<Course> findAll() {
-        // TODO implement here
-        return null;
+        List<Course> listCourse = courseDao.findAll();
+        return listCourse;
     }
 
     public int countCourses() {
-        // TODO implement here
-        return 0;
+        int countCourse = courseDao.countCourses();
+        return countCourse;
     }
 
 }

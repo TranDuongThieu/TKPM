@@ -17,8 +17,8 @@ public class LessonService {
     }
 
     public List<Lesson> findLessonByCourse(String courseId) {
-        // TODO implement here
-        return null;
+        List<Lesson> listLesson = lessonDao.findLessonByCourse(courseId);
+        return listLesson;
     }
 
 }

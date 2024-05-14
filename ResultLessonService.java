@@ -17,12 +17,12 @@ public class ResultLessonService {
     }
 
     public ResultLesson findOneById(String resultLessonId) {
-        // TODO implement here
-        return null;
+        ResultLesson resultLesson = resultLessonDao.findOneById(resultLessonId);
+        return resultLesson;
     }
 
     public void completeTest(String resultLessonId) {
-        
+        resultLessonDao.findOneByIdContainAnsTestAndAnsUser(resultLessonId);
     }
 
 }

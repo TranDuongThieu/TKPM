@@ -17,12 +17,8 @@ public class AnswerLessonService {
     }
 
     public AnswerLesson findOneById(String answerId) {
-        // TODO implement here
-        return null;
-    }
-
-    public void saveOrUpdate(AnswerLessonUser answerLessonUser) {
-        // TODO implement here
+        AnswerLesson answerLesson = answerLessonDao.findOneById(answerId);
+        return answerLesson;
     }
 
 }
