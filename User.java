@@ -51,5 +51,9 @@ public class User {
      * 
      */
     private String avatar;
+    
+    public String getUserId() {
+        return userId;
+    }
 
 }
