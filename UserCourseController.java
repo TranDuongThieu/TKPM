@@ -48,6 +48,9 @@ public class UserCourseController {
      */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         // TODO implement here
+        String inputSearch = req.getParameter("inputSearch");
+        List<Course> listCourse = courseService.findListCourse(inputSearch);
+        
     }
 
 }
