@@ -22,8 +22,8 @@ public class CourseService {
      * @return
      */
     public Course findOneById(String courseId) {
-        // TODO implement here
-        return null;
+        Course course = courseDao.findOneById(courseId);
+        return course;
     }
 
     /**
