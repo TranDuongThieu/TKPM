@@ -30,11 +30,4 @@ public class AnswerLessonDAO {
         return null;
     }
 
-    /**
-     * @param answerLessonUser
-     */
-    public void saveOrUpdate(AnswerLessonUser answerLessonUser) {
-        // TODO implement here
-    }
-
 }
