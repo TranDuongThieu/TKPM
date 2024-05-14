@@ -24,7 +24,7 @@ public class BillDetailService {
      */
     public boolean checkIsBought(String userId, String courseId) {
         // TODO implement here
-        return false;
+        return billDetailDao.checkIsBought(userId, courseId);
     }
 
     /**
@@ -32,6 +32,7 @@ public class BillDetailService {
      */
     public void createBillDetail(BillDetail billDetail) {
         // TODO implement here
+    	billDetailDao.createBillDetail(billDetail);
     }
 
     /**
@@ -41,7 +42,7 @@ public class BillDetailService {
      */
     public List<BillDetail> findByUserIdAndCourseId(String userId, String courseId) {
         // TODO implement here
-        return null;
+        return billDetailDao.findByUserIdAndCourseId(userId, courseId);
     }
 
 }

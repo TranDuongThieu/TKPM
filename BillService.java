@@ -22,6 +22,7 @@ public class BillService {
      */
     public void createBill(Bill bill) {
         // TODO implement here
+    	billDao.createBill(bill);
     }
 
 }

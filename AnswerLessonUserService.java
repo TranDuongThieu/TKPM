@@ -22,6 +22,7 @@ public class AnswerLessonUserService {
      */
     public void saveOrUpdate(AnswerLessonUser answerLessonUser) {
         // TODO implement here
+    	answerLessonUserDao.saveOrUpdate(answerLessonUser);
     }
 
 }

@@ -23,7 +23,7 @@ public class AnswerLessonService {
      */
     public List<AnswerLesson> findByLessonId(String lessonId) {
         // TODO implement here
-        return null;
+        return answerLessonDao.findByLessonId(lessonId);
     }
 
     /**
@@ -32,7 +32,7 @@ public class AnswerLessonService {
      */
     public AnswerLesson findOneById(String answerId) {
         // TODO implement here
-        return null;
+        return answerLessonDao.findOneById(answerId);
     }
 
     /**
@@ -40,6 +40,7 @@ public class AnswerLessonService {
      */
     public void saveOrUpdate(AnswerLessonUser answerLessonUser) {
         // TODO implement here
+    	answerLessonDao.saveOrUpdate(answerLessonUser);
     }
 
 }

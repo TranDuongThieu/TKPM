@@ -23,7 +23,7 @@ public class CourseService {
      */
     public Course findOneById(String courseId) {
         // TODO implement here
-        return null;
+        return courseDao.findOneById(courseId);
     }
 
     /**
@@ -32,7 +32,7 @@ public class CourseService {
      */
     public List<Course> findListCourse(String inputSearch) {
         // TODO implement here
-        return null;
+        return courseDao.findListCourse(inputSearch);
     }
 
     /**
@@ -43,7 +43,7 @@ public class CourseService {
      */
     public boolean checkIsEmpty(String courseName, double price, Date startDate) {
         // TODO implement here
-        return false;
+        return courseDao.checkIsEmpty(courseName, price, startDate);
     }
 
     /**
@@ -51,6 +51,7 @@ public class CourseService {
      */
     public void update(Course course) {
         // TODO implement here
+    	courseDao.update(course);
     }
 
     /**
@@ -64,6 +65,7 @@ public class CourseService {
      */
     public void add(String courseId, String courseName, String description, double price, Date startDate, String coverImg, String trailer) {
         // TODO implement here
+    	courseDao.add(courseId, courseName, description, price, startDate, coverImg, trailer);
     }
 
     /**
@@ -71,7 +73,7 @@ public class CourseService {
      */
     public List<Course> findAll() {
         // TODO implement here
-        return null;
+        return courseDao.findAll();
     }
 
     /**
@@ -79,7 +81,7 @@ public class CourseService {
      */
     public int countCourses() {
         // TODO implement here
-        return 0;
+        return courseDao.countCourses();
     }
 
 }

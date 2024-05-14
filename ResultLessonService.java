@@ -24,7 +24,7 @@ public class ResultLessonService {
      */
     public List<ResultLesson> findByUserIdAndLessonId(String userId, String lessonId) {
         // TODO implement here
-        return null;
+        return resultLessonDao.findByUserIdAndLessonId(userId, lessonId);
     }
 
     /**
@@ -33,7 +33,7 @@ public class ResultLessonService {
      */
     public ResultLesson findOneById(String resultLessonId) {
         // TODO implement here
-        return null;
+        return resultLessonDao.findOneById(resultLessonId);
     }
 
     /**
@@ -41,6 +41,7 @@ public class ResultLessonService {
      */
     public void completeTest(String resultLessonId) {
         // TODO implement here
+
     }
 
 }

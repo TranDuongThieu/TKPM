@@ -24,7 +24,7 @@ public class UserService {
      */
     public boolean findDuplicatePhone(String phoneNumber, String userId) {
         // TODO implement here
-        return false;
+        return userDao.findDuplicatePhone(phoneNumber, userId);
     }
 
     /**
@@ -32,6 +32,7 @@ public class UserService {
      */
     public void update(User user) {
         // TODO implement here
+    	userDao.update(user);
     }
 
     /**
@@ -39,7 +40,7 @@ public class UserService {
      */
     public List<User> findAll() {
         // TODO implement here
-        return null;
+        return userDao.findAll();
     }
 
 }

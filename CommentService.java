@@ -22,7 +22,7 @@ public class CommentService {
      */
     public List<Comment> findAll() {
         // TODO implement here
-        return null;
+        return commentDao.findAll();
     }
 
 }

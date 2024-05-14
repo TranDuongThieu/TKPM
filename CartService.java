@@ -23,7 +23,7 @@ public class CartService {
      */
     public List<Cart> findByUserId (String userId) {
         // TODO implement here
-        return null;
+        return cartDao.findByUserId(userId);
     }
 
     /**
@@ -31,12 +31,14 @@ public class CartService {
      */
     public void insert(Cart cart) {
         // TODO implement here
+    	cartDao.insert(cart);
     }
 
     /**
      * @param cartId
      */
     public void delete(String cartId) {
+    	cartDao.delete(cartId);
         // TODO implement here
     }
 

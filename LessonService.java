@@ -23,7 +23,7 @@ public class LessonService {
      */
     public Lesson findOneById(String lessonId) {
         // TODO implement here
-        return null;
+        return lessonDao.findOneById(lessonId);
     }
 
     /**
@@ -32,7 +32,7 @@ public class LessonService {
      */
     public List<Lesson> findLessonByCourse(String courseId) {
         // TODO implement here
-        return null;
+        return lessonDao.findLessonByCourse(courseId);
     }
 
 }
