@@ -53,6 +53,11 @@ public class UserOrderController {
      */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         // TODO implement here
+        String userId = req.getParameter("userId");
+        String courseId = req.getParameter("courseId");
+
+        boolean boughtState = checkIsBought(userId, courseId);
+        Course course = courseService.findOneById(courseId); 
     }
 
 }
